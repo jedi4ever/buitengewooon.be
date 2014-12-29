@@ -1,4 +1,3 @@
-machine:
 dependencies:
   pre:
     # Necessary for s3cmd 1.5.0-rc1
