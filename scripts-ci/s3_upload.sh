@@ -18,5 +18,5 @@ tar xzf v$s3cmd_version.tar.gz
 
 s3cmd-$s3cmd_version/s3cmd sync  --acl-public --progress --mime-type="application/javascript" html/ s3://$S3_BUCKET --bucket-location=EU --exclude '*.*' --include '*.js'
 s3cmd-$s3cmd_version/s3cmd sync  --acl-public --progress --mime-type="text/css" html/ s3://$S3_BUCKET --bucket-location=EU --exclude '*.*' --include '*.css'
-s3cmd-$s3cmd_version/s3cmd sync  --acl-public --progress --mime-type="text/html" html/ s3://$S3_BUCKET --bucket-location=EU --exclude '*.*' --include '*.html'
-s3cmd-$s3cmd_version/s3cmd sync  --acl-public -M --progress html/ s3://$S3_BUCKET --bucket-location=EU --exclude '*.css' --exclude '*.js' --exclude '*.html'
+s3cmd-$s3cmd_version/s3cmd sync  --acl-public --progress --mime-type="text/html" html/ s3://$S3_BUCKET --bucket-location=EU --exclude '*.*' --include '*.html' --include 'pages/*'
+s3cmd-$s3cmd_version/s3cmd sync  --acl-public -M --progress html/ s3://$S3_BUCKET --bucket-location=EU --exclude '*.css' --exclude '*.js' --exclude '*.html' --exclude 'pages/*'
