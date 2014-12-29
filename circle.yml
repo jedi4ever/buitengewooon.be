@@ -1,0 +1,13 @@
+machine:
+dependencies:
+  pre:
+    # Necessary for s3cmd 1.5.0-rc1
+    - sudo apt-get install python-dateutil
+test:
+  override:
+    - echo "no tests neededed here"
+deployment:
+  release:
+    branch: master
+    commands:
+      - scripts-ci/s3_upload.sh
