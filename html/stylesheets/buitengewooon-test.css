@@ -1,0 +1,44 @@
+
+.rounded2:before {
+  background: transparent url(/images/top-right.png) scroll no-repeat top right;
+  margin-bottom: -20px;
+  height: 100px;
+  display: block;
+  border: none;
+  content: url(/images/top-left.png);
+  padding: 0;
+  line-height: 0.1;
+  font-size: 1px;
+}
+
+
+.rounded2:after {
+  display: block;
+  line-height: 0.1;
+  font-size: 1px;
+  content:  url(/images/bottom-left.png);
+  margin: 0 0 -1px 0;
+  height: 100px;
+  background: white;
+  background: transparent url(/images/bottom-right.png) scroll no-repeat bottom right ;
+  padding: 0;
+}
+
+/* http://www.w3.org/Style/Examples/007/roundshadow */
+.rounded3 {
+    max-width: 620px;
+    background: url(/images/rs-right.png) right repeat-y }
+.rounded3::before {
+    display: block;
+    line-height: 0;
+    background: url(/images/rs-topright.png) top right no-repeat;
+    content: url(/images/rs-topleft.png) }
+.rounded3::after {
+    display: block;
+   line-height: 0;
+    background: url(/images/rs-bottomright.png) bottom right no-repeat;
+    content: url(/images/rs-bottomleft.png) }
+
+.rounded4 {
+    background: url(/images/textkader.png) bottom right no-repeat;
+}
